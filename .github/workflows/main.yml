@@ -48,13 +48,11 @@ jobs:
           GITHUB_TOKEN: ${{ github.token }}
       
       - name: Create a Release
-        uses: elgohr/Github-Release-Action@v4
-         
+        uses: elgohr/Github-Release-Action@v4 
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
             
         with:
-          title: Application Version ${{ steps.Bumpversion.outputs.tag }}"
-            echo '${{ steps.Bumpversion.outputs.tag }}'
-            echo '${{ steps.Bumpversion.outputs.new_tag }}'
+          title: steps.Bumpversion.outputs.tag
+
      
