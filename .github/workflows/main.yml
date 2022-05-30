@@ -39,7 +39,7 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ github.token }}
       
-      - name: Create a Release
+      - name: Create a GitHub Release
         uses: elgohr/Github-Release-Action@v4 
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}     
