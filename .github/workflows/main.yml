@@ -28,6 +28,7 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           INITIAL_VERSION: 0.0.0
+          WITH_V: true
           
 
           
@@ -53,6 +54,6 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
             
         with:
-          title: steps.Bumpversion.outputs.tag
+          title: ${{ tag }}
 
      
