@@ -54,6 +54,6 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
             
         with:
-          title: ${{ tag }}
+          title: ${{ Bumpversion.tag }}
 
      
